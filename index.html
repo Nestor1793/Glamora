@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Nestor Peña">
+    <link rel="shortcut icon" href="./ico/logoico.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Glamora</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class='nav-bar'>
+                <li class='logo'><a href='#'><img src='./img/logosolo.png'/></a></li>
+                <input type='checkbox' id='check' />
+                <span class="menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#Nosotros">Nosotros</a></li>
+                    <li><a href="">Galeria</a></li>
+                    <li><a href="">Tienda</a></li>
+                    <li><a href="">Contacto</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+    </header>
+        <main>
+            <section class="sec__1" id="inicio">
+                <div class="container_logo">
+                    <picture>
+                        <source srcset="./img/logo2.png" media="(min-width: 768px)">
+                            <img src="./img/logo1.png" alt="Logo centro">
+                    </picture>
+                </div>
+                <div class="hero-video">
+                    <video autoplay muted loop>
+                    <source src="./video/video5.mp4" type="video/mp4">
+                    </video>        
+                </div>
+            </section>
+            <Section class="sec__nosotros" id="Nosotros">
+                <div class="carta-img">
+                    <picture>
+                        <img src="./img/charlota.jpg" alt="Foto" loading="lazy">
+                    </picture>
+                </div>
+                <div class="carta-text">
+                    <h2>¡Bienvenidos a Glamora!</h2>
+                    <p>Nuestra historia comenzó en 2022 en Buenos Aires, Argentina. Somos una marca de ropa juvenil con mucho estilo y actitud. En Glamora, nos apasiona la moda y la expresión personal, y eso se refleja en cada una de nuestras prendas. Nuestra misión es brindarte diseños únicos y vanguardistas que te hagan destacar y sentirte confiado/a en cada ocasión. Desde ropa casual hasta looks más sofisticados, tenemos todo lo que necesitas para mostrar tu verdadero yo. Únete a nuestra comunidad de amantes de la moda y descubre tu propia Glamora. ¡Explora, inspira y vive con mucho onda!</p>
+                </div>
+            </Section>
+        </main>
+</body>
+</html>
