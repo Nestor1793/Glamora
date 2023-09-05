@@ -3,29 +3,28 @@ font-family: 'Caveat', cursive;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Roboto', sans-serif; */
 
-.nav-bar {
-    width: 100%;
-    display: flex;
-    /* flex-flow: row wrap; */
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    background-color: var(--color2);
-    padding: 12px 20px;
-    gap: 20px;
-    z-index: 10;
-}
 
-.menu li {
-    padding-left: 15px;
-}
+
 
 /* main */
 
-picture img{
-    width: 100%;
-}
+
 
 .hero-video video{
-    margin-top: 72px;
+    
+} 
+
+/* section */
+
+.sec__nosotros{
+    display: block;
+
+}
+
+.carta-text h2{
+    font-size: 2rem;
+}
+
+.carta-text p{
+    font-size: 1.4rem;
 }

@@ -20,71 +20,54 @@ font-family: 'Roboto', sans-serif; */
 
 /* Nav */
 
-.nav-bar {
-    width: 100%;
+header{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    position: fixed;
-    background-color: var(--color2);
-    padding: 12px 10%;
-    z-index: 10;
-    /* border-bottom: 2px solid var(--color4) ; */
-}
-.logo img {
-    width: 40px;
+    justify-content: space-between;
+    padding: 1rem 10%;
 }
 
-.menu {
+.logo{
+    max-width: 3rem;
+}
+
+.nav-list{
     display: flex;
+    gap: 1.4rem;
 }
 
-.menu li {
-    padding-left: 30px;
-}
-
-.menu li a {
-    display: inline-block;
+.nav-list li a {
+    font-size: 1.2rem;
     color: var(--color1);
-    text-align: center;
+    text-transform: uppercase;
     transition: 0.15s ease-in-out;
     position: relative;
-    text-transform: uppercase;
 }
-.menu li a::after {
-    content: "";
+
+
+.nav-list li a::after {
+    content: '';
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 0;
-    height: 2px;
-    background-color: var(--color3);
+    width: 0%;
+    height: 2%;
+    background-color: var(--color4);
     transition: 0.15s ease-in-out;
 }
-.menu li a:hover:after {
+
+.nav-list li a:hover:after{
     width: 100%;
 }
 
-.open-menu , .close-menu {
-    position: absolute;
-    color: var(--color1);
-    cursor: pointer;
-    font-size: 1.5rem;
+.abrir-menu, .cerrar-menu {
     display: none;
+
 }
 
-.open-menu {
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-}
-.close-menu {
-    top: 20px;
-    right: 20px;
-}
-#check {
-    display: none;
-}
+
+
+
 
 /* Nav */
 
@@ -100,7 +83,7 @@ font-family: 'Roboto', sans-serif; */
     height: 100%;
 }
 
-picture img{
+.container_logo picture img{
     width: 100%;
 }
 
@@ -123,7 +106,7 @@ picture img{
 .hero-video video{
     width: 100%;
     height: 100%;
-    margin-top: 72px;
+    /* margin-top: 72px; */
     overflow: hidden;
     object-fit: cover;  
 }
@@ -131,7 +114,7 @@ picture img{
 /* Section Nosotros */
 
 .sec__nosotros{
-    height: 100%;
+    height: 100vh;
     background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
     display: grid;
     grid-template-columns: 10% 40% 40% 10%;
@@ -140,29 +123,23 @@ picture img{
 
 
 .carta-img{
-    /* overflow: hidden; */
-    grid-area: 2 / 2 / 3 / 3;
+    grid-area: 2 / 3 / 3/ 2;
 }
 
 .carta-img img{
+    width: 100%;
     padding: 30px;
-    height: 100%;
     border-radius: 50px;
-    object-fit: cover; 
 }
 
 .carta-text{
-    width: 100%;
+    grid-area: 2 / 3 / 3/ 4;
     padding: 20px;
     font-size: 1.2rem;
-    grid-area: 2 / 3 / 3 / 3;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .carta-text h2{ 
-    font-size: 4rem;
+    font-size: 1rem;
     margin-bottom: 20px;
     color: var(--color1);
 }
